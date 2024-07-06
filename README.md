@@ -17,7 +17,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 To build all apps and packages, run the following command:
 
 ```
-cd vite-shadcn-turborepo
+pnpm install
 pnpm build
 ```
 
@@ -26,7 +26,7 @@ pnpm build
 To develop all apps and packages, run the following command:
 
 ```
-cd vite-shadcn-turborepo
+pnpm install
 pnpm dev
 ```
 
