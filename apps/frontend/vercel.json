@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/"
+    },
+    {
+      "src": "/admin/home",
+      "dest": "/"
+    },
+    {
+      "src": "/admin/login",
+      "dest": "/"
+    }
+  ]
+}
