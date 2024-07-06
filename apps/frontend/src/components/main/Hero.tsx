@@ -2,9 +2,13 @@ import "@repo/ui/main.css";
 import img1 from "../../../public/food1.png";
 import img2 from "../../../public/food2.png";
 import img3 from "../../../public/food3.png";
+import d1 from "../../../public/dialog-1.svg";
+import d2 from "../../../public/dialog-2.svg";
+import c1 from "../../../public/circle.svg";
+import r1 from '../../../public/ring.svg'
 const Hero = () => {
   return (
-    <div className="rubik flex justify-center items-center flex-row gap-[13rem] mt-[4rem]">
+    <div className="rubik flex justify-center items-center flex-col sm:flex-row gap-[10rem] mt-[4rem] ">
       <div className="flex flex-col gap-8 ">
         <div className="flex items-start flex-col gap-3">
           <h1 className="text-7xl font-semibold text-rose-400">
@@ -25,19 +29,19 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="home-right">
-             <img src={img1} alt="food image" className="food-imgg absolute food-1" width="200" loading="lazy"/>
-          <img src={img2} alt="food image" className="absolute food-2" width="200" loading="lazy"/>
-          <img src={img3} alt="food image" className="absolute food-3" width="200" loading="lazy"/>
+      <div className="home-right ">
+             <img src={img1} alt="food image" className="absolute w-[58%] food-1" width="200" loading="lazy"/>
+          <img src={img2} alt="food image" className="absolute w-[58%] food-2" width="200" loading="lazy"/>
+          <img src={img3} alt="food image" className="absolute w-[58%] food-3" width="200" loading="lazy"/>
 
-          {/* <img src="./assets/images/dialog-1.svg" alt="dialog" className="dialog dialog-1" width="230"/>
-          <img src="./assets/images/dialog-2.svg" alt="dialog" className="dialog dialog-2" width="230"/> */}
-{/* 
-          <img src="./assets/images/circle.svg" alt="circle shape" className="shape shape-1" width="25">
-          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-2" width="15">
-          <img src="./assets/images/circle.svg" alt="circle shape" class="shape shape-3" width="30">
-          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-4" width="60">
-          <img src="./assets/images/ring.svg" alt="ring shape" class="shape shape-5" width="40"></img> */}
+          <img src={d1} alt="dialog" className="dialog dialog-1" width="170"/>
+          <img src={d2} alt="dialog" className="dialog dialog-2" width="170"/>
+
+          <img src={c1} alt="circle shape" className="shape shape-1" width="25"/>
+          <img src={c1} alt="circle shape" className="shape shape-2" width="15"/>
+          <img src={c1} alt="circle shape" className="shape shape-3" width="30"/>
+          <img src={r1} alt="ring shape" className="shape shape-4" width="60"/>
+          <img src={r1} alt="ring shape" className="shape shape-5" width="40"/>
       </div>
     </div>
   );
