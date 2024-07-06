@@ -14,7 +14,7 @@ const Sidebar: React.FC = () => {
           >
             <img
               alt="Logo"
-              src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/riva-dashboard-tailwind/img/logos/loopple.svg"
+              src="https://avatars.githubusercontent.com/u/171850615?s=400&u=e737fd85b8958d1e043f570354b8e28d1360a6f2&v=4"
               className="inline"
             />
           </a>
