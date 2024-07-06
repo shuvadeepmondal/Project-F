@@ -4,7 +4,7 @@ import MHome from "./components/main/MHome";
 import Login from "./components/admin/Login";
 function App() {
   return (
-    <div className="h-screen w-screen flex justify-center items-center">
+    <div className="min-h-screen w-screen flex justify-center items-center">
       <Routes>
         <Route path="/" element={<MHome />} />
         <Route path="/admin/home" element={<Home />} />
