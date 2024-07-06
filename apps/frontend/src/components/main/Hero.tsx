@@ -1,12 +1,27 @@
 import "@repo/ui/main.css";
+import { useState, useEffect } from "react";
 import img1 from "../../../public/food1.png";
 import img2 from "../../../public/food2.png";
 import img3 from "../../../public/food3.png";
 import d1 from "../../../public/dialog-1.svg";
 import d2 from "../../../public/dialog-2.svg";
 import c1 from "../../../public/circle.svg";
-import r1 from '../../../public/ring.svg'
+import r1 from "../../../public/ring.svg";
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  const checkIsMobile = () => {
+    setIsMobile(window.matchMedia("(max-width: 640px)").matches);
+  };
+
+  useEffect(() => {
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
   return (
     <div className="rubik flex justify-center items-center flex-col sm:flex-row gap-[10rem] mt-[4rem] ">
       <div className="flex flex-col gap-8 ">
@@ -29,19 +44,37 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="home-right ">
-             <img src={img1} alt="food image" className="absolute w-[58%] food-1" width="200" loading="lazy"/>
-          <img src={img2} alt="food image" className="absolute w-[58%] food-2" width="200" loading="lazy"/>
-          <img src={img3} alt="food image" className="absolute w-[58%] food-3" width="200" loading="lazy"/>
+      <div className={isMobile ? "home-rightt" : "home-right"}>
+        <img
+          src={img1}
+          alt="food image"
+          className="absolute w-[60%] food-1"
+          width="200"
+          loading="lazy"
+        />
+        <img
+          src={img2}
+          alt="food image"
+          className="absolute w-[60%] food-2"
+          width="200"
+          loading="lazy"
+        />
+        <img
+          src={img3}
+          alt="food image"
+          className="absolute w-[60%] food-3"
+          width="200"
+          loading="lazy"
+        />
 
-          <img src={d1} alt="dialog" className="dialog dialog-1" width="170"/>
-          <img src={d2} alt="dialog" className="dialog dialog-2" width="170"/>
+        <img src={d1} alt="dialog" className="dialog dialog-1" width="170" />
+        <img src={d2} alt="dialog" className="dialog dialog-2" width="170" />
 
-          <img src={c1} alt="circle shape" className="shape shape-1" width="25"/>
-          <img src={c1} alt="circle shape" className="shape shape-2" width="15"/>
-          <img src={c1} alt="circle shape" className="shape shape-3" width="30"/>
-          <img src={r1} alt="ring shape" className="shape shape-4" width="60"/>
-          <img src={r1} alt="ring shape" className="shape shape-5" width="40"/>
+        <img src={c1} alt="circle shape" className="shape shape-1" width="25" />
+        <img src={c1} alt="circle shape" className="shape shape-2" width="15" />
+        <img src={c1} alt="circle shape" className="shape shape-3" width="30" />
+        <img src={r1} alt="ring shape" className="shape shape-4" width="60" />
+        <img src={r1} alt="ring shape" className="shape shape-5" width="40" />
       </div>
     </div>
   );
