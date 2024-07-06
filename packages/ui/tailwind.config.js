@@ -18,6 +18,9 @@ module.exports = {
       },
     },
     extend: {
+      aspectRatio: {
+        "10/11": "20 / 13",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -68,11 +71,11 @@ module.exports = {
           to: { height: "0" },
         },
 
-        "scaleUp": {
+        scaleUp: {
           "0%, 100%": { transform: "translateY(0) scale(1)" },
           "50%": { transform: "translateY(-5px) scale(1.05)" },
         },
-        "moveUp": {
+        moveUp: {
           "0%, 100%": { transform: "translateY(0)" },
           "20%": { transform: "translateY(-3px)" },
           "50%": { transform: "translateY(-8px)" },
@@ -81,8 +84,8 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "scaleUp": "scaleUp 3s ease-in-out infinite",
-        "moveUp": "moveUp 3s ease-in-out infinite",
+        scaleUp: "scaleUp 3s ease-in-out infinite",
+        moveUp: "moveUp 3s ease-in-out infinite",
       },
     },
   },

@@ -203,6 +203,11 @@
 
 
 
+.home-rightt {
+  position: relative;
+  aspect-ratio: 30 / 10;
+  padding-top: 40%;
+}
 .home-right {
   position: relative;
   aspect-ratio: 10 / 11;
@@ -302,3 +307,4 @@
     transform: translateY(-8px);
   }
 }
+
