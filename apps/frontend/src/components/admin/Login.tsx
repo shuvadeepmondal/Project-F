@@ -1,12 +1,11 @@
 
-import { Link } from "react-router-dom"
 import { useState } from "react";
 import log_img from "../../assets/login.png";
 
 
 
 
-export default function Page(): JSX.Element {
+export default function Login(): JSX.Element {
 
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
@@ -57,5 +56,5 @@ export default function Page(): JSX.Element {
     </main>
   );
 }
-export default Login
+
 
