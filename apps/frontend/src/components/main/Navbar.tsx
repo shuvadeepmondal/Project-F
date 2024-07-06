@@ -1,10 +1,19 @@
+import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <header>
+      <nav>
+        <h1>fuddie .</h1>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Download</li>
+          <li>Admin</li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;
