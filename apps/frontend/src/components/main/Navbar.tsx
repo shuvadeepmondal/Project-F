@@ -8,7 +8,6 @@ const Navbar = () => {
           <li className="font-medium rubik cursor-pointer hover:text-cyan-400">Home</li>
           <li className="font-medium rubik cursor-pointer hover:text-cyan-400">About</li>
           <li className="font-medium rubik cursor-pointer hover:text-cyan-400">Download</li>
-          <li className="font-medium rubik cursor-pointer hover:text-cyan-400">Admin</li>
         </ul>
       </nav>
     </header>
