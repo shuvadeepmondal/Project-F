@@ -12,5 +12,10 @@
       "src": "/admin/login",
       "dest": "/"
     }
+    ,
+    {
+      "src": "/otp",
+      "dest": "/"
+    }
   ]
 }
